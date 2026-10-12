@@ -1,0 +1,3 @@
+usr/include/rptadvtemplate/rptadvtemplate.h
+usr/lib/*/librptadvtemplate.so
+usr/lib/*/pkgconfig/rptadvtemplate.pc
