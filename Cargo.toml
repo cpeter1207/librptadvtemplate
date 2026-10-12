@@ -1,0 +1,22 @@
+[package]
+name = "librptadvtemplate"
+version = "0.1.0-alpha.1"
+edition = "2024"
+rust-version = "1.85"
+license = "GPL-2.0-only"
+description = "Bounded message-template ABI for rpt_advanced"
+repository = "https://github.com/cpeter1207/librptadvtemplate"
+publish = false
+
+[lib]
+name = "rptadvtemplate"
+crate-type = ["cdylib"]
+
+[profile.release]
+codegen-units = 1
+debug = 1
+lto = "thin"
+panic = "abort"
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ["cfg(coverage)"] }

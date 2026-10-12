@@ -1,0 +1,10 @@
+prefix=@PREFIX@
+libdir=@LIBDIR@
+includedir=${prefix}/include
+abi_version=@ABI_VERSION@
+
+Name: librptadvtemplate
+Description: Bounded UTF-8 template ABI for rpt_advanced
+Version: @VERSION@
+Libs: -L${libdir} -lrptadvtemplate
+Cflags: -I${includedir}
